@@ -7,6 +7,7 @@ License:	GPL-like
 Group:		X11/Window Managers
 Source0:	http://dl.sourceforge.net/evilwm/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	8fca9e0f3ea2b6ee68c80b1d7ca47c88
+Source1:	%{name}-xsession.desktop
 URL:		http://evilwm.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -52,10 +53,12 @@ Jego cechy to:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/xsessions,%{_mandir}/man1}
 
 install evilwm $RPM_BUILD_ROOT%{_bindir}
 install evilwm.1 $RPM_BUILD_ROOT%{_mandir}/man1
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/xsessions/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -64,4 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README* TODO
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/xsessions/%{name}.desktop
 %{_mandir}/man1/*
