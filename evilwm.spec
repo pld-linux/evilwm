@@ -6,6 +6,7 @@ Release:	1
 License:	GPL-like
 Group:		X11/Window Managers
 Source0:	http://dl.sourceforge.net/evilwm/%{name}_%{version}.orig.tar.gz
+# Source0-md5:	8fca9e0f3ea2b6ee68c80b1d7ca47c88
 URL:		http://evilwm.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
