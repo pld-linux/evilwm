@@ -2,7 +2,7 @@ Summary:	evilwm - a minimalist window manager
 Summary(pl):	evilwm - minimalistyczny window manager
 Name:		evilwm
 Version:	0.99.17
-Release:	1
+Release:	0.1
 License:	GPL-like
 Group:		X11/Window Managers
 Source0:	http://dl.sourceforge.net/evilwm/%{name}_%{version}.orig.tar.gz
