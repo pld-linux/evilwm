@@ -46,7 +46,9 @@ Jego cechy to:
 %setup -q -n %{name}-%{version}.orig
 
 %build
-%{__make} allinone
+%{__make} allinone \
+	CC="%{__cc}" \
+	CFLAGS='$(INCLUDES) $(DEFINES) %{rpmcflags} -Wall'
 
 %install
 rm -rf $RPM_BUILD_ROOT
