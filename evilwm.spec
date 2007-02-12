@@ -1,5 +1,5 @@
 Summary:	evilwm - a minimalist window manager
-Summary(pl):	evilwm - minimalistyczny window manager
+Summary(pl.UTF-8):   evilwm - minimalistyczny window manager
 Name:		evilwm
 Version:	0.99.17
 Release:	0.1
@@ -28,20 +28,20 @@ Features:
  * Virtual desktops (compile time option)
  * Small binary size (even with everything turned on)
 
-%description -l pl
-Minimalistyczny zarz±dca okien dla X Window System.
-'Minimalistyczny' nie znaczy, ¿e jest zbyt prymitywny, by byæ
-u¿ytecznym - znaczy, i¿ po prostu pomija wiele rzeczy, które czyni±
-innych zarz±dców okien nieu¿ytecznymi.
+%description -l pl.UTF-8
+Minimalistyczny zarzÄ…dca okien dla X Window System.
+'Minimalistyczny' nie znaczy, Å¼e jest zbyt prymitywny, by byÄ‡
+uÅ¼ytecznym - znaczy, iÅ¼ po prostu pomija wiele rzeczy, ktÃ³re czyniÄ…
+innych zarzÄ…dcÃ³w okien nieuÅ¼ytecznymi.
 
 Jego cechy to:
 
- * Brak dekoracji okien poza prost± ramk± o szeroko¶ci 1 piksela
+ * Brak dekoracji okien poza prostÄ… ramkÄ… o szerokoÅ›ci 1 piksela
  * Brak ikon
- * Dobra kontrola z klawiatury, w³±czaj±c przemieszczanie i
-   prze³±czanie maksymalizacji
+ * Dobra kontrola z klawiatury, wÅ‚Ä…czajÄ…c przemieszczanie i
+   przeÅ‚Ä…czanie maksymalizacji
  * Wirtualne desktopy (opcja kompilacji)
- * Ma³y rozmiar binarki (nawet z wszystkim w³±czonym)
+ * MaÅ‚y rozmiar binarki (nawet z wszystkim wÅ‚Ä…czonym)
 
 %prep
 %setup -q -n %{name}-%{version}.orig
