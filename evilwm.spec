@@ -1,5 +1,5 @@
 Summary:	evilwm - a minimalist window manager
-Summary(pl.UTF-8):   evilwm - minimalistyczny window manager
+Summary(pl.UTF-8):	evilwm - minimalistyczny window manager
 Name:		evilwm
 Version:	0.99.17
 Release:	0.1
