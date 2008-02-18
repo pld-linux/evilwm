@@ -1,0 +1,11 @@
+--- evilwm-0.99.17.orig/evilwm.h.old	2008-02-18 20:34:14.000000000 +0100
++++ evilwm-0.99.17.orig/evilwm.h	2008-02-18 20:34:39.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ /* default settings */
+ 
+-#define DEF_FONT	"variable"
++#define DEF_FONT	"fixed"
+ #define DEF_FG		"goldenrod"
+ #define DEF_BG		"grey50"
+ #define DEF_BW		1
