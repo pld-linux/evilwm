@@ -2,14 +2,15 @@ Summary:	evilwm - a minimalist window manager
 Summary(pl.UTF-8):	evilwm - minimalistyczny window manager
 Name:		evilwm
 Version:	0.99.17
-Release:	0.1
+Release:	1
 License:	GPL-like
 Group:		X11/Window Managers
 Source0:	http://dl.sourceforge.net/evilwm/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	2d9ae76a172240a1ba7e359d9aae41aa
 Source1:	%{name}-xsession.desktop
+Patch0:		%{name}-fixed.patch
 URL:		http://evilwm.sourceforge.net/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libXext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,9 +46,10 @@ Jego cechy to:
 
 %prep
 %setup -q -n %{name}-%{version}.orig
+%patch0 -p1
 
 %build
-%{__make} allinone \
+%{__make} \
 	CC="%{__cc}" \
 	CFLAGS='$(INCLUDES) $(DEFINES) %{rpmcflags} -Wall'
 
