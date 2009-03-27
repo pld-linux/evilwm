@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/evilwm/%{name}_%{version}.orig.tar.gz
 Source1:	%{name}-xsession.desktop
 Patch0:		%{name}-fixed.patch
 URL:		http://evilwm.sourceforge.net/
+BuildRequires:	motif-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
